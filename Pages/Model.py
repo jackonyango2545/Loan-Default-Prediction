@@ -325,9 +325,9 @@ def app():
                 otherwise = ((1 - default_probability)*100)
                 # Interpret the prediction
                 if default_probability > 0.5:
-                    message = f"There is a {chance:.2f}% chance of the loan being defaulted. Meaning there is {otherwise:.2f}% chance of default"
+                    message = f"There is a {chance:.2f}% chance of the loan being defaulted. Meaning there is {otherwise:.2f}% chance of no default"
                 elif default_probability < 0.5:
-                    message = f"There is a {otherwise:.2f}% chance of the loan not being defaulted. Meaning there is {chance:.2f}% chance of no default"
+                    message = f"There is a {otherwise:.2f}% chance of the loan not being defaulted. Meaning there is {chance:.2f}% chance of default"
                 return message
 
             message=output()
