@@ -2,7 +2,6 @@ import streamlit as st
 
 def app():
     st.title("LOAN DEFAULTMENT PREDICTION")
-    st.write("*This project is meant for learning purposes*")
     st.markdown("""
     <style>
     .main{
