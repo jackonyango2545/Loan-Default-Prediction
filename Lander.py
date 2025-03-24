@@ -5,11 +5,8 @@ import statistics
 import numpy as np
 
 @st.cache_resource
-def data():  
-    try:
-        df = pd.read_csv(r"C:\Users\hp\OneDrive\Desktop\Jack\Loan_Defaultment\Loan_default.csv")
-    except:
-        df = pd.read_csv("https://github.com/jackonyango2545/Loan-Default-Prediction/raw/main/Loan_default.csv")
+def data():
+    df = pd.read_csv("https://github.com/jackonyango2545/Loan-Default-Prediction/raw/main/Loan_default.csv")
         
     df.rename(columns={'Income':'Annual Income','NumCreditLines':'Number of Credit Lines','DTIRatio':'Debt to Income Ratio'},inplace=True)
 
